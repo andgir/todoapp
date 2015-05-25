@@ -2,7 +2,7 @@ from flask import Flask
 
 app = Flask(__name__)
 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://andre:bnm1bn1@localhost/todoapp'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://root:jjbVaAgNrBNV7kD0@172.17.42.1:49153/db'
 
 from views import *
 

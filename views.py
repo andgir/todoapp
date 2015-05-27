@@ -1,6 +1,9 @@
 from todoapp import app
 from flask import render_template, request, redirect, flash
 from models import Category, Todo, Priority, db
+import os
+
+run_host=os.environ['HOSTNAME']
 
 @app.route('/')
 def list_all():
